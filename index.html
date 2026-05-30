@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eyes Up High</title>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg: #0d0f12;
+      --surface: #161a20;
+      --border: #252b34;
+      --text: #e4e8ef;
+      --muted: #6b7585;
+      --accent: #4f9cf9;
+      --accent-dim: #1e3a5f;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      padding: 3rem 1.5rem 2rem;
+      max-width: 680px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .wordmark {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--text);
+    }
+
+    .tagline {
+      margin-top: 0.4rem;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    main {
+      flex: 1;
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 0 1.5rem 3rem;
+      width: 100%;
+    }
+
+    .section-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+
+    .app-card {
+      display: block;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.4rem 1.6rem;
+      text-decoration: none;
+      color: inherit;
+      transition: border-color 0.15s ease, background 0.15s ease;
+    }
+
+    .app-card:hover {
+      border-color: var(--accent-dim);
+      background: #1a1f28;
+    }
+
+    .app-card-header {
+      display: flex;
+      align-items: baseline;
+      gap: 0.75rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .app-name {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .app-platform {
+      font-size: 0.75rem;
+      color: var(--muted);
+      background: var(--border);
+      padding: 0.15rem 0.5rem;
+      border-radius: 4px;
+    }
+
+    .app-desc {
+      color: var(--muted);
+      font-size: 0.9rem;
+      line-height: 1.55;
+    }
+
+    footer {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 1.5rem 1.5rem 2.5rem;
+      width: 100%;
+      border-top: 1px solid var(--border);
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    footer a {
+      color: var(--muted);
+      font-size: 0.85rem;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: var(--text);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="wordmark">Eyes Up High</div>
+    <div class="tagline">Building tools for the backcountry</div>
+  </header>
+
+  <main>
+    <div class="section-label">Apps</div>
+    <a class="app-card" href="https://play.google.com/store/apps/details?id=dev.eyesuphigh.slopesense">
+      <div class="app-card-header">
+        <span class="app-name">SlopeSense</span>
+        <span class="app-platform">Android</span>
+      </div>
+      <p class="app-desc">
+        Real-time slope angle, roll, and compass bearing overlaid on a live camera feed.
+        Built for backcountry skiers and snowboarders who need reliable terrain assessment
+        before committing to a line. Logs measurements locally with GPS coordinates and elevation.
+      </p>
+    </a>
+  </main>
+
+  <footer>
+    <a href="/privacy.html">Privacy Policy</a>
+  </footer>
+
+</body>
+</html>

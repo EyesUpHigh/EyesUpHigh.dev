@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — SlopeSense</title>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg: #0d0f12;
+      --surface: #161a20;
+      --border: #252b34;
+      --text: #e4e8ef;
+      --muted: #6b7585;
+      --accent: #4f9cf9;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      padding: 3rem 1.5rem 2rem;
+      max-width: 680px;
+      margin: 0 auto;
+      width: 100%;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .back-link {
+      display: inline-block;
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.85rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .back-link:hover {
+      color: var(--text);
+    }
+
+    .back-link::before {
+      content: "← ";
+    }
+
+    header h1 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
+
+    .effective-date {
+      margin-top: 0.35rem;
+      color: var(--muted);
+      font-size: 0.875rem;
+    }
+
+    main {
+      flex: 1;
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 4rem;
+      width: 100%;
+    }
+
+    section {
+      margin-bottom: 2.25rem;
+    }
+
+    h2 {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 0.6rem;
+      letter-spacing: 0.01em;
+    }
+
+    p {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-bottom: 0.75rem;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul {
+      color: var(--muted);
+      font-size: 0.9rem;
+      padding-left: 1.4rem;
+      margin-top: 0.4rem;
+    }
+
+    ul li {
+      margin-bottom: 0.35rem;
+    }
+
+    .highlight-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      border-radius: 6px;
+      padding: 1rem 1.2rem;
+      margin-bottom: 2.25rem;
+    }
+
+    .highlight-box p {
+      margin: 0;
+      font-size: 0.875rem;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 1.5rem 1.5rem 2.5rem;
+      width: 100%;
+      border-top: 1px solid var(--border);
+    }
+
+    footer a {
+      color: var(--muted);
+      font-size: 0.85rem;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: var(--text);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a class="back-link" href="/">eyesuphigh.dev</a>
+    <h1>Privacy Policy — SlopeSense</h1>
+    <div class="effective-date">Effective date: June 1, 2025</div>
+  </header>
+
+  <main>
+
+    <div class="highlight-box">
+      <p>SlopeSense does not collect, transmit, or store any personal data on external servers.
+         All measurement logs remain on your device. The only network request the app makes is
+         a single call to retrieve elevation data for your current GPS coordinates.</p>
+    </div>
+
+    <section>
+      <h2>What data the app accesses</h2>
+      <p>SlopeSense accesses the following on-device data to function:</p>
+      <ul>
+        <li><strong>GPS location</strong> (latitude, longitude, altitude) — used to look up elevation via the Open-Meteo API and to tag measurement log entries.</li>
+        <li><strong>Device sensors</strong> (accelerometer, gyroscope, magnetometer) — used to calculate slope angle, roll, and compass bearing in real time. This data never leaves your device.</li>
+        <li><strong>Camera</strong> — used to display a live viewfinder behind the sensor overlay. The camera feed is never recorded, saved, or transmitted.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Elevation lookup</h2>
+      <p>When you open SlopeSense, the app sends your current GPS coordinates (latitude and
+         longitude) to the <a href="https://open-meteo.com" target="_blank" rel="noopener">Open-Meteo API</a>
+         to retrieve your elevation. This is the only network request the app makes.</p>
+      <p>Open-Meteo is a free, open-source weather and terrain API. No account, API key, or
+         identifying information is sent with this request. Please refer to Open-Meteo's own
+         privacy policy for details on how they handle API requests.</p>
+    </section>
+
+    <section>
+      <h2>Measurement logs</h2>
+      <p>Measurements you save — including slope angle, roll, compass bearing, GPS coordinates,
+         altitude, and timestamp — are stored locally on your device only. This data is never
+         uploaded to any server, synced to the cloud, or shared with any third party.</p>
+      <p>You can delete your logs at any time from within the app or by uninstalling it.</p>
+    </section>
+
+    <section>
+      <h2>What we do not do</h2>
+      <ul>
+        <li>No user accounts or registration.</li>
+        <li>No analytics or crash reporting services.</li>
+        <li>No advertising networks or tracking SDKs.</li>
+        <li>No sale or sharing of location data with any third party.</li>
+        <li>No background location access — location is only read while the app is open.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Data retention</h2>
+      <p>Because all data is stored locally on your device, you have full control over retention.
+         Uninstalling the app removes all associated data. We retain nothing on our end because
+         nothing is ever sent to us.</p>
+    </section>
+
+    <section>
+      <h2>Children</h2>
+      <p>SlopeSense is not directed at children under 13 and does not knowingly collect any
+         information from children. The app collects no personal information from any user.</p>
+    </section>
+
+    <section>
+      <h2>Changes to this policy</h2>
+      <p>If we make material changes to this privacy policy, we will update the effective date
+         above and, where appropriate, notify users through the app or the Play Store listing.</p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Questions about this privacy policy can be sent to
+         <a href="mailto:privacy@eyesuphigh.dev">privacy@eyesuphigh.dev</a>.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <a href="/">← eyesuphigh.dev</a>
+  </footer>
+
+</body>
+</html>
